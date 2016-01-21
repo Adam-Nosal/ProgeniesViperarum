@@ -92,6 +92,12 @@ namespace CnControls
         [Tooltip("Touch Zone transform")]
         public RectTransform TouchZone;
 
+        public delegate void OnDragJoystickEvent( float vertical, float horizontal );
+        /// <summary>
+        /// OnDrag Delegate 
+        /// </summary>
+        public OnDragJoystickEvent OnDragDelegate;
+
         // ---------------------------------------------------------------------------
 
         private Vector2 _initialStickPosition;
@@ -212,6 +218,9 @@ namespace CnControls
             // Finally, we update our virtual axis
             HorizintalAxis.Value = horizontalValue;
             VerticalAxis.Value = verticalValue;
+
+            if(OnDragDelegate!=null)
+            OnDragDelegate(verticalValue, horizontalValue);
         }
 
         public void OnPointerUp(PointerEventData eventData)

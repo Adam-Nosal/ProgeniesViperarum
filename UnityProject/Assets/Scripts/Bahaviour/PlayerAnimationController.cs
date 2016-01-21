@@ -4,17 +4,10 @@ using Helpers;
 
 public class PlayerAnimationController : MonoBehaviour
 {
-    #region Editor Variables
     [SerializeField]
     private Animator mAnimator;
 
-    #endregion
-
-    #region Variables
-    #endregion
-
-    #region Public Geters
-    #endregion
+    
 
 
 
@@ -24,9 +17,7 @@ public class PlayerAnimationController : MonoBehaviour
         PlayIdleAnimation();
     }
 
-
-    #region Private Methods
-
+    
     private void InitVariables()
     {
         if (mAnimator == null)
@@ -34,33 +25,27 @@ public class PlayerAnimationController : MonoBehaviour
 
 
     }
-
-    #endregion
-
-    #region Public Methods
-
-
+    
     public void PlayReloadAnimation(bool origin)
     {
-         mAnimator.SetBool(PlayerAnimatorHelper.PLAYER_IS_RELOADING_PARAM, true);
+         mAnimator.SetBool(AnimatorHelper.PLAYER_IS_RELOADING_PARAM, true);
     }
 
     public void PlayShootAnimation(bool origin)
     {
-         mAnimator.SetBool(PlayerAnimatorHelper.PLAYER_IS_SHOOTING_PARAM, true);
+         mAnimator.SetBool(AnimatorHelper.PLAYER_IS_SHOOTING_PARAM, true);
     }
 
     public void PlayIdleAnimation(){
 
-              mAnimator.SetBool(PlayerAnimatorHelper.PLAYER_IS_SHOOTING_PARAM, false);
-             mAnimator.SetBool(PlayerAnimatorHelper.PLAYER_IS_RELOADING_PARAM, false);
+              mAnimator.SetBool(AnimatorHelper.PLAYER_IS_SHOOTING_PARAM, false);
+             mAnimator.SetBool(AnimatorHelper.PLAYER_IS_RELOADING_PARAM, false);
     }
 
     public void PlayWalkAnimation(float velocity)
     {
-        mAnimator.SetFloat(PlayerAnimatorHelper.PLAYER_VELOCITY_PARAM, velocity);
+        mAnimator.SetFloat(AnimatorHelper.PLAYER_VELOCITY_PARAM, velocity);
     }
-
-    #endregion
+    
 
 }

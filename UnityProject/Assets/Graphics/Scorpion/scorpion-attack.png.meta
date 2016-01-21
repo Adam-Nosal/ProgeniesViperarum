@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 08f5d4e6296ec284e88e95ed61e33296
-timeCreated: 1448406166
+timeCreated: 1453415065
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: scorpion-attack_0
+    21300002: scorpion-attack_1
+    21300004: scorpion-attack_2
+    21300006: scorpion-attack_3
+    21300008: scorpion-attack_4
+    21300010: scorpion-attack_5
+    21300012: scorpion-attack_6
+    21300014: scorpion-attack_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -17,7 +25,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -30,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +46,160 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: scorpion-attack_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 27.5}
+        - {x: -27, y: -9.5}
+        - {x: -24, y: -21.5}
+        - {x: -20, y: -27.5}
+        - {x: 27, y: -27.5}
+        - {x: 27, y: 26.5}
+        - {x: 26, y: 27.5}
+    - name: scorpion-attack_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 4
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 25}
+        - {x: -27, y: -5}
+        - {x: -26, y: -15}
+        - {x: -18, y: -16}
+        - {x: -16, y: -12}
+        - {x: -5, y: -25}
+        - {x: 18, y: -25}
+        - {x: 27, y: -22}
+        - {x: 27, y: 25}
+    - name: scorpion-attack_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 24}
+        - {x: -28, y: -19}
+        - {x: -21, y: -24}
+        - {x: 23, y: -24}
+        - {x: 27, y: -23}
+        - {x: 28, y: -19}
+        - {x: 28, y: 24}
+    - name: scorpion-attack_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 6
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 23}
+        - {x: -29, y: -23}
+        - {x: 29, y: -23}
+        - {x: 29, y: 23}
+    - name: scorpion-attack_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 7
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 22.5}
+        - {x: -29, y: -8.5}
+        - {x: -20, y: -22.5}
+        - {x: 20, y: -22.5}
+        - {x: 29, y: -11.5}
+        - {x: 29, y: 22.5}
+    - name: scorpion-attack_5
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 6
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 23}
+        - {x: -29, y: -23}
+        - {x: 29, y: -23}
+        - {x: 29, y: 23}
+    - name: scorpion-attack_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 5
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 24}
+        - {x: -28, y: -19}
+        - {x: -21, y: -24}
+        - {x: 23, y: -24}
+        - {x: 27, y: -23}
+        - {x: 28, y: -19}
+        - {x: 28, y: 24}
+    - name: scorpion-attack_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 4
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 25}
+        - {x: -27, y: -5}
+        - {x: -26, y: -15}
+        - {x: -18, y: -16}
+        - {x: -16, y: -12}
+        - {x: -5, y: -25}
+        - {x: 18, y: -25}
+        - {x: 27, y: -22}
+        - {x: 27, y: 25}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 guid: 13b7d7a7795b48744b7937eaa4dc4712
-timeCreated: 1448406166
+timeCreated: 1453415129
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: scorpion-death-1_0
+    21300002: scorpion-death-1_1
+    21300004: scorpion-death-1_2
+    21300006: scorpion-death-1_3
+    21300008: scorpion-death-1_4
+    21300010: scorpion-death-1_5
+    21300012: scorpion-death-1_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -17,7 +24,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -30,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +45,308 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: scorpion-death-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 25}
+        - {x: -29, y: 23}
+        - {x: -29, y: -20}
+        - {x: -21, y: -32}
+        - {x: 19, y: -32}
+        - {x: 27, y: -13}
+        - {x: 27, y: 25}
+    - name: scorpion-death-1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 25}
+        - {x: 11, y: 23}
+        - {x: 10, y: 15}
+        - {x: 10, y: 8}
+        - {x: 10, y: 10}
+        - {x: 1, y: 25}
+        - {x: -27, y: 25}
+        - {x: -29, y: 23}
+        - {x: -29, y: -20}
+        - {x: -23, y: -25}
+        - {x: -4, y: -32}
+        - {x: 8, y: -32}
+        - {x: 27, y: -12}
+        - {x: 27, y: 20}
+        - {x: 24, y: 25}
+    - name: scorpion-death-1_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 25}
+        - {x: -29, y: 23}
+        - {x: -29, y: 3}
+        - {x: -27, y: -2}
+        - {x: -24, y: -1}
+        - {x: -21, y: 2}
+        - {x: -24, y: -6}
+        - {x: -29, y: -8}
+        - {x: -29, y: -19}
+        - {x: -19, y: -32}
+        - {x: 20, y: -32}
+        - {x: 27, y: -14}
+        - {x: 27, y: 25}
+    - name: scorpion-death-1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -2}
+        - {x: 14, y: -4}
+        - {x: 8, y: -8}
+        - {x: 0, y: -7}
+        - {x: 8, y: -7}
+        - {x: 13, y: 1}
+        - {x: 20, y: -2}
+        - {x: 21, y: -2}
+        - {x: 27, y: 1}
+        - {x: 27, y: 23}
+        - {x: 25, y: 25}
+        - {x: 8, y: 25}
+        - {x: -24, y: 6}
+        - {x: -24, y: -25}
+        - {x: -20, y: -32}
+        - {x: 16, y: -32}
+        - {x: 27, y: -12}
+        - {x: 27, y: -3}
+        - {x: 21, y: -2}
+      - - {x: -19, y: 23}
+        - {x: -25, y: 23}
+        - {x: -29, y: 14}
+        - {x: -29, y: 1}
+        - {x: -26, y: -1}
+        - {x: -19, y: -1}
+        - {x: -12, y: 4}
+        - {x: -12, y: 13}
+        - {x: -15, y: 22}
+    - name: scorpion-death-1_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -9}
+        - {x: 3, y: -5}
+        - {x: 0, y: -5}
+        - {x: 8, y: -7}
+        - {x: 12, y: -3}
+        - {x: 12, y: 8}
+        - {x: 10, y: 12}
+        - {x: -10, y: 12}
+        - {x: -24, y: 5}
+        - {x: -24, y: -25}
+        - {x: -20, y: -32}
+        - {x: 7, y: -32}
+        - {x: 10, y: -30}
+        - {x: 12, y: -19}
+        - {x: 12, y: -9}
+      - - {x: 16, y: -2}
+        - {x: 12, y: -5}
+        - {x: 12, y: -8}
+        - {x: 16, y: -16}
+        - {x: 19, y: -18}
+        - {x: 22, y: -17}
+        - {x: 24, y: -11}
+        - {x: 24, y: -4}
+        - {x: 21, y: -2}
+      - - {x: 15, y: 25}
+        - {x: 12, y: 22}
+        - {x: 10, y: 15}
+        - {x: 10, y: 5}
+        - {x: 16, y: 0}
+        - {x: 20, y: -2}
+        - {x: 23, y: -2}
+        - {x: 27, y: 3}
+        - {x: 27, y: 20}
+        - {x: 22, y: 25}
+      - - {x: -21, y: 23}
+        - {x: -25, y: 23}
+        - {x: -29, y: 17}
+        - {x: -29, y: 2}
+        - {x: -28, y: -1}
+        - {x: -24, y: -1}
+        - {x: -21, y: 0}
+        - {x: -12, y: 11}
+        - {x: -12, y: 16}
+        - {x: -16, y: 21}
+    - name: scorpion-death-1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 12}
+        - {x: -12, y: 12}
+        - {x: -18, y: 0}
+        - {x: -18, y: -14}
+        - {x: -11, y: -30}
+        - {x: -5, y: -32}
+        - {x: 8, y: -32}
+        - {x: 11, y: -30}
+        - {x: 12, y: -16}
+        - {x: 12, y: 7}
+      - - {x: 16, y: -2}
+        - {x: 12, y: -5}
+        - {x: 12, y: -8}
+        - {x: 16, y: -16}
+        - {x: 19, y: -18}
+        - {x: 22, y: -17}
+        - {x: 24, y: -11}
+        - {x: 24, y: -4}
+        - {x: 21, y: -2}
+      - - {x: -24, y: -6}
+        - {x: -24, y: -7}
+        - {x: -22, y: -9}
+        - {x: -21, y: -9}
+        - {x: -18, y: -6}
+        - {x: -18, y: -4}
+        - {x: -21, y: -3}
+      - - {x: 15, y: 25}
+        - {x: 12, y: 22}
+        - {x: 10, y: 15}
+        - {x: 10, y: 5}
+        - {x: 16, y: 0}
+        - {x: 20, y: -2}
+        - {x: 23, y: -2}
+        - {x: 27, y: 3}
+        - {x: 27, y: 20}
+        - {x: 22, y: 25}
+      - - {x: -21, y: 23}
+        - {x: -25, y: 23}
+        - {x: -29, y: 17}
+        - {x: -29, y: 2}
+        - {x: -28, y: -1}
+        - {x: -24, y: -1}
+        - {x: -21, y: 0}
+        - {x: -12, y: 11}
+        - {x: -12, y: 16}
+        - {x: -16, y: 21}
+    - name: scorpion-death-1_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -21}
+        - {x: -8, y: -28}
+        - {x: -7, y: -32}
+        - {x: 3, y: -32}
+        - {x: 8, y: -28}
+        - {x: 8, y: -23}
+        - {x: 0, y: -21}
+      - - {x: 16, y: -2}
+        - {x: 12, y: -5}
+        - {x: 12, y: -8}
+        - {x: 16, y: -16}
+        - {x: 19, y: -18}
+        - {x: 22, y: -17}
+        - {x: 24, y: -11}
+        - {x: 24, y: -4}
+        - {x: 21, y: -2}
+      - - {x: -13, y: -12}
+        - {x: -9, y: -16}
+        - {x: -6, y: -15}
+        - {x: -6, y: -13}
+        - {x: -10, y: -8}
+        - {x: -13, y: -9}
+      - - {x: -24, y: -6}
+        - {x: -24, y: -7}
+        - {x: -22, y: -9}
+        - {x: -21, y: -9}
+        - {x: -18, y: -6}
+        - {x: -18, y: -4}
+        - {x: -21, y: -3}
+      - - {x: -9, y: 6}
+        - {x: -16, y: 3}
+        - {x: -18, y: -2}
+        - {x: -18, y: -6}
+        - {x: -17, y: -7}
+        - {x: -15, y: -7}
+        - {x: -6, y: -4}
+        - {x: -5, y: 0}
+        - {x: -6, y: 4}
+        - {x: -8, y: 6}
+      - - {x: 13, y: 25}
+        - {x: 11, y: 24}
+        - {x: 11, y: 3}
+        - {x: 14, y: -2}
+        - {x: 23, y: -2}
+        - {x: 27, y: 3}
+        - {x: 27, y: 18}
+        - {x: 25, y: 25}
+      - - {x: -25, y: 23}
+        - {x: -29, y: 19}
+        - {x: -29, y: -1}
+        - {x: -19, y: -1}
+        - {x: -18, y: 7}
+        - {x: -18, y: 23}
+      - - {x: -18, y: 13}
+        - {x: -17, y: 10}
+        - {x: -14, y: 10}
+        - {x: -12, y: 12}
+        - {x: -13, y: 15}
+        - {x: -16, y: 15}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -6,53 +6,76 @@ using Helpers;
 public class PlayerController : MonoBehaviour
 {
 
-    #region Editor Variables
+ 
     [Header("Controllers")]
     [SerializeField]
     private PlayerAnimationController mAnimationController;
     [SerializeField]
     private Rigidbody2D mRigidbody2d;
-    [SerializeField]
+    
     private Transform mTransform;
+
+    [Header("Joysticks")]
+    [SerializeField]
+    private SimpleJoystick movementJoy;
+    [SerializeField]
+    private SimpleJoystick lookJoy;
+
+    [Header("Prefabs")]
+    [SerializeField]
+    private GameObject bulletPrefab;
 
     [Header("Movement")]
     [SerializeField]
     [Range(5.0f,15.0f)]
-    private float Speed = 7.5f;
+    private float speed = 7.5f;
+    [SerializeField]
+    private Transform bulletSpawn;
 
-    #endregion
+ 
 
 
-    #region Variables
+    
     public Vector3 lookVector;
     public Vector3 destinationRotation;
-    #endregion
+ 
 
-    #region Public Geters
-    #endregion
 
 
     void Awake()
     {
         InitVariables();
+        lookJoy.OnDragDelegate += LookJoystickMoved;
+            
     }
 
+    private void LookJoystickMoved(float vertical, float horizontal)
+    {
+        Vector3 diff = new Vector3(horizontal,vertical) - mTransform.position;
+        diff.Normalize();
+
+        float zAxisRotation = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        Quaternion bulletRotation = new Quaternion();
+        bulletRotation.eulerAngles = new Vector3(0f,0f, zAxisRotation);
+
+        GameObject bullet = (GameObject) Instantiate(bulletPrefab, bulletSpawn.position, bulletRotation);
+        bullet.GetComponent<BulletController>().Shoot(new Vector3( horizontal, vertical,  0f));
+    }
 
 
     void Update()
     {
-        mRigidbody2d.velocity = new Vector2(CnInputManager.GetAxis(InputHelper.MOVE_JOYSTICK_HORIZONTAL)*Speed,
-                                            CnInputManager.GetAxis(InputHelper.MOVE_JOYSTICK_VERTICAL) * Speed);
+        mRigidbody2d.velocity = new Vector2(CnInputManager.GetAxis(InputHelper.MOVE_JOYSTICK_HORIZONTAL)*speed,
+                                            CnInputManager.GetAxis(InputHelper.MOVE_JOYSTICK_VERTICAL) * speed);
 
         lookVector = new Vector3(CnInputManager.GetAxis(InputHelper.LOOK_JOYSTICK_HORIZONTAL) ,
                                             CnInputManager.GetAxis(InputHelper.LOOK_JOYSTICK_VERTICAL) ,0.0f);
 
-        destinationRotation = Quaternion.FromToRotation(transform.position, lookVector).eulerAngles;
-        destinationRotation.x = 0.0f;
-        destinationRotation.y = 0.0f;
-        mTransform.rotation = Quaternion.Euler(destinationRotation);
-
-
+        Vector3 diff = lookVector - transform.position;
+        diff.Normalize();
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z );
+        
 
         //animation handling
         if (mRigidbody2d.velocity.x > 0 )
@@ -67,7 +90,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    #region Private Methods
+ 
 
     private void InitVariables()
     {
@@ -80,13 +103,8 @@ public class PlayerController : MonoBehaviour
             mTransform = this.GetComponent<Transform>();
     }
 
-    #endregion
 
 
 
-    #region Public Methods
-
-
-    #endregion
 
 }
